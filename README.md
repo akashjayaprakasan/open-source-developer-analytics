@@ -146,3 +146,25 @@ GITHUB_TOKEN=your_github_token
 **Akash Jayaprakasan**
 
 GitHub: https://github.com/akashjayaprakasan
+
+## Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home-page.png)
+
+### Developer Dashboard
+
+![Developer Dashboard](screenshots/dashboard-overview.png)
+
+### Analytics and Skills
+
+![Analytics and Skills](screenshots/dashboard-analytics.png)
+
+### Recommendations and Activity
+
+![Recommendations and Activity](screenshots/dashboard-recommendations.png)
+
+### Generated Portfolio
+
+![Generated Portfolio](screenshots/portfolio-page.png)
