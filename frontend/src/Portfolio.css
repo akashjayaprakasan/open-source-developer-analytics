@@ -1,0 +1,184 @@
+.portfolio-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #071426;
+  color: #edf6ff;
+}
+
+.back-button {
+  border: 1px solid #38bdf8;
+  border-radius: 10px;
+  padding: 10px 16px;
+  background: transparent;
+  color: #7dd3fc;
+  cursor: pointer;
+}
+
+.portfolio-hero {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  max-width: 1050px;
+  margin: 40px auto;
+  padding: 34px;
+  border: 1px solid #28415f;
+  border-radius: 20px;
+  background: #0a1728;
+}
+
+.portfolio-hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+}
+
+.portfolio-tag {
+  margin: 0;
+  color: #38bdf8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.portfolio-hero h1 {
+  margin: 8px 0;
+  font-size: 38px;
+}
+
+.portfolio-username {
+  color: #7dd3fc;
+}
+
+.portfolio-hero a {
+  color: #38bdf8;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.portfolio-section {
+  max-width: 1050px;
+  margin: 28px auto;
+  padding: 28px;
+  border: 1px solid #28415f;
+  border-radius: 20px;
+  background: #0a1728;
+}
+
+.portfolio-section h2 {
+  margin-top: 0;
+  color: #7dd3fc;
+}
+
+.portfolio-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.portfolio-stats div,
+.portfolio-project-card,
+.portfolio-recommendations article {
+  padding: 18px;
+  border: 1px solid #28415f;
+  border-radius: 14px;
+  background: #071426;
+}
+
+.portfolio-stats strong {
+  display: block;
+  color: #38bdf8;
+  font-size: 26px;
+}
+
+.portfolio-stats span {
+  color: #93a8c3;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-list span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #12314d;
+  color: #bfe8ff;
+}
+
+.portfolio-projects,
+.portfolio-recommendations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.portfolio-project-card {
+  color: #edf6ff;
+  text-decoration: none;
+}
+
+.portfolio-project-card h3,
+.portfolio-recommendations h3 {
+  margin-top: 0;
+  color: #7dd3fc;
+}
+
+.portfolio-project-card p,
+.portfolio-recommendations p {
+  color: #aebfd8;
+}
+
+.portfolio-project-card div {
+  display: flex;
+  gap: 12px;
+  color: #93a8c3;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .portfolio-page {
+    padding: 20px;
+  }
+
+  .portfolio-hero {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .portfolio-stats,
+  .portfolio-projects,
+  .portfolio-recommendations {
+    grid-template-columns: 1fr;
+  }
+}
+
+.portfolio-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 1050px;
+  margin: 0 auto 20px;
+}
+
+.download-button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  background: #38bdf8;
+  color: #071426;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .portfolio-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,21 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/app/__pycache__/
+*.pyc
+
+# Secrets
+backend/.env
+frontend/.env
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Editor
+.vscode/
+
+# Root dependencies
+node_modules/
+package-lock.json
+package.json
