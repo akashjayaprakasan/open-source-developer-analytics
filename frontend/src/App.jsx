@@ -1,3 +1,5 @@
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 import { useEffect, useState } from "react";
 import Portfolio from "./Portfolio";
 import axios from "axios";
@@ -45,10 +47,10 @@ function App() {
     }
   : null;
 
-  const fetchSavedProfiles = async () => {
+ const fetchSavedProfiles = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:8000/api/saved-profiles"
+      `${API_BASE_URL}/api/saved-profiles`
     );
 
     setSavedProfiles(response.data.profiles || []);
@@ -82,13 +84,13 @@ useEffect(() => {
   activityResponse,
   streakResponse,
 ] = await Promise.all([
-  axios.get(`http://localhost:8000/api/profile/${cleanUsername}`),
-  axios.get(`http://localhost:8000/api/repositories/${cleanUsername}`),
-  axios.get(`http://localhost:8000/api/languages/${cleanUsername}`),
-  axios.get(`http://localhost:8000/api/score/${cleanUsername}`),
-  axios.get(`http://localhost:8000/api/recommendations/${cleanUsername}`),
-  axios.get(`http://localhost:8000/api/activity/${cleanUsername}`),
-  axios.get(`http://localhost:8000/api/streak/${cleanUsername}`),
+  axios.get(`${API_BASE_URL}/api/profile/${cleanUsername}`),
+  axios.get(`${API_BASE_URL}/api/repositories/${cleanUsername}`),
+  axios.get(`${API_BASE_URL}/api/languages/${cleanUsername}`),
+  axios.get(`${API_BASE_URL}/api/score/${cleanUsername}`),
+  axios.get(`${API_BASE_URL}/api/recommendations/${cleanUsername}`),
+  axios.get(`${API_BASE_URL}/api/activity/${cleanUsername}`),
+  axios.get(`${API_BASE_URL}/api/streak/${cleanUsername}`),
 ]);
 
     setData({
