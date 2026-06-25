@@ -168,3 +168,11 @@ GitHub: https://github.com/akashjayaprakasan
 ### Generated Portfolio
 
 ![Generated Portfolio](screenshots/portfolio-page.png)
+
+## Live Demo
+
+**Live Website:** [Open Source Developer Analytics](https://open-source-developer-analytics.vercel.app)
+
+**Backend API:** [Open Source Developer Analytics API](https://open-source-developer-analytics.onrender.com)
+
+**GitHub Repository:** [View Source Code](https://github.com/akashjayaprakasan/open-source-developer-analytics)
